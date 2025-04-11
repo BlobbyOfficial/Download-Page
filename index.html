@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download MyApp for Windows</title>
+
+  <!-- Google Fonts (safe to include) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Link to your external CSS file (style.css) -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google reCAPTCHA Script -->
+  <!-- Safe to share because this only includes the reCAPTCHA API, but sensitive data is handled through the site key in the form below -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+</head>
+<body>
+
+  <!-- Video Ad Modal (YouTube Embed) -->
+  <div id="videoAdModal" class="video-ad-container">
+    <div class="video-ad-content">
+      <!-- Embed your YouTube ad video here -->
+      <!-- Replace `YOUR_VIDEO_ID` with your actual YouTube video ID -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="skipButton" class="skip-button">Skip Ad (5)</div>
+    </div>
+  </div>
+
+  <!-- Main Container for Download Section -->
+  <div class="container">
+    <h1>Download MyApp for Windows</h1>
+    <p>Your go-to solution for XYZ. Fast, efficient, and secure.</p>
+
+    <!-- Google AdSense Banner -->
+    <div class="banner-ad">
+      <!-- This script is safe to include in GitHub because it is publicly available and doesn't expose sensitive information -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Replace YOUR_ADSENSE_CLIENT_ID and YOUR_ADSENSE_SLOT_ID with your actual AdSense credentials -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="YOUR_ADSENSE_CLIENT_ID"
+           data-ad-slot="YOUR_ADSENSE_SLOT_ID"
+           data-ad-format="auto"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- Download Button (Hidden initially) -->
+    <a id="download-btn" href="app.exe" download>Download MyApp</a>
+
+    <!-- Instructions Section -->
+    <div class="instructions">
+      <div class="instruction-step">
+        <h3>Step 1: Run the Installer</h3>
+        <!-- Replace with actual screenshot paths (make sure to include these in your repo) -->
+        <img src="screenshots/1.png" alt="Run Installer Screenshot">
+      </div>
+      <div class="instruction-step">
+        <h3>Step 2: Accept the Terms</h3>
+        <img src="screenshots/2.png" alt="Accept Terms Screenshot">
+      </div>
+      <div class="instruction-step">
+        <h3>Step 3: Complete the Setup</h3>
+        <img src="screenshots/3.png" alt="Complete Setup Screenshot">
+      </div>
+    </div>
+  </div>
+
+  <!-- Google reCAPTCHA Form -->
+  <form action="/submit" method="POST" id="recaptcha-form">
+    <!-- Replace YOUR_RECAPTCHA_SITE_KEY with your actual site key from Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+    <button type="submit">Proceed to Download</button>
+  </form>
+
+  <!-- Link to external JavaScript file (script.js) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
