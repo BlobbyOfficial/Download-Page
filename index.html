@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Download MyApp for Windows</title>
 
-  <!-- Google Fonts (safe to include) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   
-  <!-- Link to your external CSS file (style.css) -->
+  <!-- Link to external CSS file (style.css) -->
   <link rel="stylesheet" href="style.css" />
   
   <!-- Google reCAPTCHA Script -->
-  <!-- Safe to share because this only includes the reCAPTCHA API, but sensitive data is handled through the site key in the form below -->
+  <!-- This script loads the reCAPTCHA API, which is needed to add reCAPTCHA to the form -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
 </head>
@@ -22,7 +22,7 @@
   <div id="videoAdModal" class="video-ad-container">
     <div class="video-ad-content">
       <!-- Embed your YouTube ad video here -->
-      <!-- Replace `YOUR_VIDEO_ID` with your actual YouTube video ID -->
+      <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
       <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div id="skipButton" class="skip-button">Skip Ad (5)</div>
     </div>
@@ -35,7 +35,7 @@
 
     <!-- Google AdSense Banner -->
     <div class="banner-ad">
-      <!-- This script is safe to include in GitHub because it is publicly available and doesn't expose sensitive information -->
+      <!-- Google AdSense script to display ads -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- Replace YOUR_ADSENSE_CLIENT_ID and YOUR_ADSENSE_SLOT_ID with your actual AdSense credentials -->
       <ins class="adsbygoogle"
@@ -55,7 +55,7 @@
     <div class="instructions">
       <div class="instruction-step">
         <h3>Step 1: Run the Installer</h3>
-        <!-- Replace with actual screenshot paths (make sure to include these in your repo) -->
+        <!-- Replace with actual screenshot paths -->
         <img src="screenshots/1.png" alt="Run Installer Screenshot">
       </div>
       <div class="instruction-step">
