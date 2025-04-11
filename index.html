@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Yourself - MyApp</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Verify to Download MyApp</h1>
+    <p>Please complete the reCAPTCHA to access the download page.</p>
+
+    <!-- reCAPTCHA Form -->
+    <form action="download.html" method="GET" id="recaptcha-form">
+      <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+      <button type="submit">Proceed to Download</button>
+    </form>
+    
+    <!-- Error Message (hidden by default) -->
+    <div id="recaptcha-error" class="error-message" style="display:none;">
+      <p>Please complete the reCAPTCHA to proceed.</p>
+    </div>
+  </div>
+  
+  <script src="../js/script.js"></script>
+</body>
+</html>
